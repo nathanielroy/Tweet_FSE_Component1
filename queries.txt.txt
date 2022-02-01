@@ -1,0 +1,18 @@
+CREATE TABLE `comp1`.`user` (
+  `userId` int NOT NULL AUTO_INCREMENT,
+  `userFullName` varchar(255) DEFAULT NULL,
+  `userEmail` varchar(45) DEFAULT NULL,
+  `userPassword` varchar(45) DEFAULT NULL,
+  `createdAt` varchar(255) DEFAULT NULL,
+  `lastLoggedAt` varchar(255) DEFAULT NULL,
+  `status` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`userId`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `comp1`.`tweet` (
+  `tweetId` int NOT NULL AUTO_INCREMENT,
+  `tweets` varchar(255) DEFAULT NULL,
+  `userEmail` varchar(45) DEFAULT NULL,
+  `createdAt` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`tweetId`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
